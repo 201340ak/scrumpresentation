@@ -9,8 +9,8 @@
 
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/white.css">
 	<link rel="stylesheet" href="css/theme/custom.css">
+	<link rel="stylesheet" href="css/theme/white.css">
 
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="lib/css/monokai.css">
@@ -60,27 +60,34 @@
 				</section>
 				<section>
 					<h3>Cynefin Model</h3>
-					<img src="./content/images/Cynefin_as_of_1st_June_2014.png" alt="cynefin model: simple, complicated, complex, chaos" />
+					<img src="./content/images/Cynefin_as_of_1st_June_2014.png"
+						alt="cynefin model: simple, complicated, complex, chaos" />
 					<aside class="notes">
-							This is the cynefin model to aid decision-making.
+						This is the cynefin model to aid decision-making.
 						<ul>
 							<li>
-								Obvious (or simple): This is obvious to the person in that domain. If the problem is obvious, You've got to get a sense of what the problem is-
-								categorize the problem, and respond. This means that there are rules in place/best practices, the problem is very clear and the situation is stable.
+								Obvious (or simple): This is obvious to the person in that domain. If the problem is obvious, You've got
+								to get a sense of what the problem is-
+								categorize the problem, and respond. This means that there are rules in place/best practices, the
+								problem is very clear and the situation is stable.
 								There's likely only one right answer (known knowns).
 							</li>
 							<li>
-								Complicated: This requires analysis. So first, you get a sense of what the problem is, analyze the problem, and respond.
+								Complicated: This requires analysis. So first, you get a sense of what the problem is, analyze the
+								problem, and respond.
 								There's probably a range of right answers (known unknowns)
 							</li>
 							<li>
-								Complex: This can't be analyzed, and requires some kind of probing (experimenting), then sensing- which is analyzing the data, and then responding. (unknown unknowns)
+								Complex: This can't be analyzed, and requires some kind of probing (experimenting), then sensing- which
+								is analyzing the data, and then responding. (unknown unknowns)
 							</li>
 							<li>
-								Chaos is just bad. (Run) This is when action is required up front to establish some order, then sensing, and then responding. (Stop the bleeding)
+								Chaos is just bad. (Run) This is when action is required up front to establish some order, then sensing,
+								and then responding. (Stop the bleeding)
 							</li>
 
-							Scrum lives between the Complicated domain and the complex one, to be able to take the complex problems, break them down into complicated ones.
+							Scrum lives between the Complicated domain and the complex one, to be able to take the complex problems,
+							break them down into complicated ones.
 							Where each sprint is kind of an experiment of sorts.
 						</ul>
 					</aside>
@@ -105,17 +112,19 @@
 					<aside class="notes">
 						Each component serves a purpose, and specifc responsibilities.
 						There are 3 pillars to Scrum:
-						Transparency: aspects of the process must be visible to those responsible for the outcome.
-						These aspects should be defined by a common standard so everyone shares a common understanding of what is
-						being seen.
-						This takes place in a non-judgemental environment. It's everyone's problem, therefore everyone's responsible
-						for the solution.
-						Inspection: Members should be frequently inspecting the scrum artifacts and progress toward a sprint goal.
-						But shouldn't be so
-						frequent that it's an impediment.
-						Adaptation:
-						If during the inspection process, we start to see deviations, we need to address the issue, and course
-						correct.
+						<p>Transparency: aspects of the process must be visible to those responsible for the outcome.
+							These aspects should be defined by a common standard so everyone shares a common understanding of what is
+							being seen.
+							This takes place in a non-judgemental environment. It's everyone's problem, therefore everyone's
+							responsible
+							for the solution.</p>
+						<p>Inspection: Members should be frequently inspecting the scrum artifacts and progress toward a sprint
+							goal.
+							But shouldn't be so
+							frequent that it's an impediment.</p>
+						<p>Adaptation:
+							If during the inspection process, we start to see deviations, we need to address the issue, and course
+							correct.</p>
 					</aside>
 				</section>
 				<section>
@@ -186,10 +195,13 @@
 				</section>
 				<section>
 					<h3>Important parts of Scrum</h3>
-					<p><b>Retrospective</b> is the most important part of Scrum. Backlog refinement is the second most important.</p>
+					<p><b>Retrospective</b> is the most important part of Scrum. Backlog refinement is the second most important.
+					</p>
 					<aside class="notes">
-						Retrospective is the most important part of Scrum. This is the part that takes inspection to adaptation. You have to change 1, and only 1 thing to improve.
-						Then, backlog refinement is the second most important thing. Again, this an area that takes inspection to adaptation. We don't want to go down one path and
+						Retrospective is the most important part of Scrum. This is the part that takes inspection to adaptation. You
+						have to change 1, and only 1 thing to improve.
+						Then, backlog refinement is the second most important thing. Again, this an area that takes inspection to
+						adaptation. We don't want to go down one path and
 						develop something wasteful/pointless. We have to be able to adapt our product backlog too.
 					</aside>
 				</section>
@@ -330,10 +342,8 @@
 				<section>
 					<h3>Transparency</h3>
 					<ul>
-						<l
-					</ul>
-					<aside class="notes">
-					</aside>
+						<l </ul> <aside class="notes">
+							</aside>
 				</section>
 				<section>
 					<p>TODO</p>
@@ -430,16 +440,28 @@
 				{ src: 'plugin/markdown/marked.js' },
 				{ src: 'plugin/markdown/markdown.js' },
 				{ src: 'plugin/notes/notes.js', async: true },
-				{ src: 'plugin/highlight/highlight.js', async: true }, {
-					src: './node_modules/reveal.js-plugins/chart/chart.min.js'
-				},
-				{ src: './node_modules/reveal.js-plugins/chart/csv2chart.js' },
+				{ src: 'plugin/highlight/highlight.js', async: true },
+				{ src: 'plugin/chart/Chart.min.js' },
+				{ src: 'plugin/chart/csv2chart.js' },
 			],
 			chart: {
-				title: {
-					text: "Items in a given backlog"
+				defaults: {
+					global: {
+						title: { fontColor: "#FFF" },
+						legend: {
+							labels: { text:"{label}", fontColor: "black" },
+						},
+					},
+					scale: {
+						scaleLabel: { fontColor: "#FFF" },
+						gridLines: { color: "#FFF", zeroLineColor: "#FFF" },
+						ticks: { fontColor: "#FFF" },
+					}
 				},
-				pie: { backgroundColor: [["#1b91ff", "#17ff2e", "#ff2c2d"]] },
+				line: { borderColor: ["rgba(20,220,220,.8)", "rgba(220,120,120,.8)", "rgba(20,120,220,.8)"], "borderDash": [[5, 10], [0, 0]] },
+				bar: { backgroundColor: ["rgba(20,220,220,.8)", "rgba(220,120,120,.8)", "rgba(20,120,220,.8)"] },
+				pie: { backgroundColor: [["#17ff2e", "#1b91ff", "#ff2c2d"]] },
+				radar: { borderColor: ["rgba(20,220,220,.8)", "rgba(220,120,120,.8)", "rgba(20,120,220,.8)"] },
 			},
 		});
 	</script>
