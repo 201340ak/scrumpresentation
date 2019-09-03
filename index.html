@@ -1,49 +1,449 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/monokai.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/white.css">
+	<link rel="stylesheet" href="css/theme/custom.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>Knowledge Transfer</h1>
+			</section>
+			<section>
+				<h1>Goals</h1>
+				<ul>
+					<li>
+						Eagle eye view of Scrum
+					</li>
+					<li>
+						Roles and Responsibilities in Scrum
+					</li>
+					<li>
+						Ceremonies of Scrum Events
+					</li>
+					<li>
+						Key Take aways
+					</li>
+				</ul>
+			</section>
+			<section>
+				<section>
+					<h1>What is Scrum</h1>
+					<p><b>From the Scrum Guide</b></p>
+					<q>Scrum is a framwork for developing, delivering, and sustaining complex products.</q>
+					<aside class="notes">
+						This is quoted from the Scrum Guide. And this is very true. This is about how to develop, deliver and
+						maintain products.
+					</aside>
+				</section>
+				<section>
+					<h3>Cynefin Model</h3>
+					<img src="./content/images/Cynefin_as_of_1st_June_2014.png" alt="cynefin model: simple, complicated, complex, chaos" />
+					<aside class="notes">
+							This is the cynefin model to aid decision-making.
+						<ul>
+							<li>
+								Obvious (or simple): This is obvious to the person in that domain. If the problem is obvious, You've got to get a sense of what the problem is-
+								categorize the problem, and respond. This means that there are rules in place/best practices, the problem is very clear and the situation is stable.
+								There's likely only one right answer (known knowns).
+							</li>
+							<li>
+								Complicated: This requires analysis. So first, you get a sense of what the problem is, analyze the problem, and respond.
+								There's probably a range of right answers (known unknowns)
+							</li>
+							<li>
+								Complex: This can't be analyzed, and requires some kind of probing (experimenting), then sensing- which is analyzing the data, and then responding. (unknown unknowns)
+							</li>
+							<li>
+								Chaos is just bad. (Run) This is when action is required up front to establish some order, then sensing, and then responding. (Stop the bleeding)
+							</li>
+
+							Scrum lives between the Complicated domain and the complex one, to be able to take the complex problems, break them down into complicated ones.
+							Where each sprint is kind of an experiment of sorts.
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h3>Characteristics of Scrum</h3>
+					<ul>
+						<li>Lightweight, simple to understand, difficult to master</li>
+						<li>Each component serve a specific purpose</li>
+						<li>Empirical process:
+							<span class="fragment highlight-current-red" data-fragment-index="1">
+								Transparency,
+							</span>
+							<span class="fragment highlight-current-red" data-fragment-index="2">
+								Inspection,
+							</span>
+							<span class="fragment highlight-current-red" data-fragment-index="3">
+								Adaptation
+							</span>
+						</li>
+					</ul>
+					<aside class="notes">
+						Each component serves a purpose, and specifc responsibilities.
+						There are 3 pillars to Scrum:
+						Transparency: aspects of the process must be visible to those responsible for the outcome.
+						These aspects should be defined by a common standard so everyone shares a common understanding of what is
+						being seen.
+						This takes place in a non-judgemental environment. It's everyone's problem, therefore everyone's responsible
+						for the solution.
+						Inspection: Members should be frequently inspecting the scrum artifacts and progress toward a sprint goal.
+						But shouldn't be so
+						frequent that it's an impediment.
+						Adaptation:
+						If during the inspection process, we start to see deviations, we need to address the issue, and course
+						correct.
+					</aside>
+				</section>
+				<section>
+					<h3>Characteristics of Scrum (cont)</h3>
+					<ul>
+						<li>
+							<span class="fragment highlight-current-green" data-fragment-index="1">
+								Individuals & Interactions
+							</span> over
+							<span class="fragment highlight-current-blue" data-fragment-index="2">
+								Process & Tools
+							</span>
+						</li>
+						<li>
+							<span class="fragment highlight-current-green" data-fragment-index="1">
+								Working Software
+							</span> over
+							<span class="fragment highlight-current-blue" data-fragment-index="2">
+								Comprehensive Documentation</span>
+						</li>
+						<li>
+							<span class="fragment highlight-current-green" data-fragment-index="1">
+								Customer Collaboration
+							</span> over
+							<span class="fragment highlight-current-blue" data-fragment-index="2">
+								Contract Negotiation
+							</span>
+						</li>
+						<li>
+							<span class="fragment highlight-current-green" data-fragment-index="1">
+								Responding to Change
+							</span> over
+							<span class="fragment highlight-current-blue" data-fragment-index="2">
+								Following a plan
+							</span>
+						</li>
+					</ul>
+					<aside class="notes">
+						Agile is about people.
+						Don't get caught up in "Don't do the smart thing because it's not in our process" or "Let's do the dumb
+						thing because it's our process"
+						Give what the customers need- not necessarily what they want.
+						This does not mean just throw away the left. But enough of what's on the right, to make the left awesome.
+					</aside>
+				</section>
+				<section>
+					<h3>Scrum Values</h3>
+					<ul>
+						<li>
+							Respect
+						</li>
+						<li>
+							Openness
+						</li>
+						<li>
+							Courage
+						</li>
+						<li>
+							Focus
+						</li>
+						<li>
+							Commitement
+						</li>
+					</ul>
+					<aside class="notes">
+						When these values are lived out by the scrum team, the pillars come to life and builds trust.
+					</aside>
+				</section>
+				<section>
+					<h3>Important parts of Scrum</h3>
+					<p><b>Retrospective</b> is the most important part of Scrum. Backlog refinement is the second most important.</p>
+					<aside class="notes">
+						Retrospective is the most important part of Scrum. This is the part that takes inspection to adaptation. You have to change 1, and only 1 thing to improve.
+						Then, backlog refinement is the second most important thing. Again, this an area that takes inspection to adaptation. We don't want to go down one path and
+						develop something wasteful/pointless. We have to be able to adapt our product backlog too.
+					</aside>
+				</section>
+				<section>
+					<h3>Scrum Team</h3>
+					<ul>
+						<li class="fragment highlight-current-red" data-fragment-index="1">Product Owner
+							<span class="fragment fade-in-then-out" data-fragment-index="1">: Responsible for the product
+								backlog</span>
+						</li>
+						<li class="fragment highlight-current-red" data-fragment-index="2">Development Team
+							<span class="fragment fade-in-then-out" data-fragment-index="2">: Responsible for the increment (sprint
+								deliverable)</span>
+						</li>
+						<li class="fragment highlight-current-red" data-fragment-index="3">Scrum Master
+							<span class="fragment fade-in-then-out" data-fragment-index="3">: Responsible for promoting and supporting
+								Scrum. Servant-leader</span>
+						</li>
+					</ul>
+					<aside class="notes">
+						The product owner is responsible for maximizing the value of the product backlog. This includes making it
+						clear, and visible, and making sure that
+						the backlog is in priority order.
+						The Development team is responsible for delivering a releasable increment of done at the end of each sprint.
+						They are self organizing, and cross functional.
+						There's no sub teams nor titles.
+						The Scrum Master helps promote scrum. They are a servant-leader for the Scrum Team and maximizes the value
+						produced by the team.
+						They are there to serve the team, and aspire to lead them to success. They are often the facilitator between
+						business needs, and development needs.
+					</aside>
+				</section>
+				<section>
+					<h3>Scrum Ceremonies</h3>
+					<ul>
+						<li class="fragment highlight-current-red" data-fragment-index="1">The Sprint
+							<span class="fragment fade-in-then-out" data-fragment-index="1">: Time-box of the development of a "done",
+								potentially releaseable product <span class="fragment hightlight-blue">Increment</span></span>
+						</li>
+						<li class="fragment highlight-current-red" data-fragment-index="2">Sprint Planning
+							<span class="fragment fade-in-then-out" data-fragment-index="2">: Planning of what work will be performed
+								in
+								the Sprint</span>
+						</li>
+						<li class="fragment highlight-current-red" data-fragment-index="3">Daily Scrum
+							<span class="fragment fade-in-then-out" data-fragment-index="3">: Time-box to forecast the the next
+								24-hours
+								of work of the Dev Team</span>
+						</li>
+						<li class="fragment highlight-current-red" data-fragment-index="4">Sprint Review
+							<span class="fragment fade-in-then-out" data-fragment-index="4">: Demo to inspect the Increment and adapt
+								the P.B.</span>
+						</li>
+						<li class="fragment highlight-red" data-fragment-index="5,6">Scrum Retrospective
+							<span class="fragment fade-in-then-out" data-fragment-index="5">: Vent session</span>
+							<span class="fragment fade-in-then-out" data-fragment-index="6">: Inspection of the last sprint
+								and create plan for improvements</span>
+						</li>
+					</ul>
+					<aside class="notes">
+						The sprint is a time frame of when a product Increment is created. This product increment is a useable, and
+						possibly releasable piece of functionality. The sprint contains the planning, daily scrums, the development
+						work, the sprint review, and the retro.
+						The Sprint Planning answers the questions of what can be delivered
+						in the Increment rsulting from the upcoming Sprint? And how will the work needed to deliver the Increment be
+						acheived
+						The Daily Scrum is a short 15 minute daily meeting in the DEV team to plan work for the next 24 hours. This
+						is
+						to optimize the performance. This is a big proponent for the "Adaptation" pillar of the Empirical process.
+						The Sprint Review is to Demonstate the last increment developed during that sprint. This gives a chance to
+						adapt
+						the product backlog if necessary. This meeting is not a status meeting. This is a presentation to elicit
+						feedback-
+						and Bob says that it should be a positive feedback, not a time to be critical or add a wish list.
+						The Retro is an opportunity for the Scrum Team to inspect itself and create a plan for improvements. This
+						inspection
+						is in regards to people, relationships, process, and tools. Bob mentioned you should limit to 1 action item.
+					</aside>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>Take Aways</h2>
+				</section>
+				<section>
+					<h3>Reasons Sprint Teams fail</h3>
+					<ul>
+						<li>Routinely carrying over work from one sprint to the next</li>
+						<li>They can't work quality into a Sprint</li>
+						<li>Lousy Product Backlog</li>
+					</ul>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section>
+					<h3>50% of work can be a waste</h3>
+					<canvas class="stretch" data-chart="pie">
+						,"Great Stuff", "Good Stuff", "Bad Stuff"
+						My first dataset, 20, 30, 50
+					</canvas>
+					<aside class="notes">
+						In our class, it was said that on average, the last half of the product backlog, is filled with work isn't
+						used, or doesn't affect the users.
+						Or in some fashion, this last half is a waste of time. That might not be the case for us, but does give an
+						area to inspect for waste. That doesn't mean the "Bad stuff" isn't stuff we shouldn't implement, it's just
+						saying
+						that they might be time wasters, or not as profitable as the "Great/Good" stuff.
+						So let's say we have project a, and project b, both with dollar values upon completing the product backlog.
+						If we split each product in half,
+						Project B's first "Great and good " stuff might be worth more than project a's bad stuff. (Or "not good
+						enough stuff"). So it's more beneficial to have
+						Each projects' first half done and released before their second halves.
+						Clear as mud? (Maybe draw up diagram we saw in class)
+					</aside>
+				</section>
+				<section>
+					<h3>Tuckman Model</h3>
+					<img src="content/images/TuckmanGraph2.jfif" height="400"
+						alt="tuckman model of forming, storming, norming, performing" />
+					<aside class="notes">
+						There was an interesting model shown called the Tuckman model.
+						These are the phases a team would go through. First is the Forming stage. This is where it's just
+						introductory.
+						The next is storming where they are figuring each other's boundaries, and maybe being slightly combative,
+						but because they are pushing each other, and being
+						a little adventurous with presenting their thoughts, they are more productive.
+						Then after sometime they start to mesh together and come to solutions a bit faster. That's the norming
+						phase.
+						After they start to build their solution-creating skills together, they start to speak the same language and
+						work seemlessly. This the performing team. This is estimated to be 50% more productivite than the initial
+						forming team.
+						If we are every quarter or every other sprint shuffling around we might not be through that stroming phase
+						long enough
+						to learn how to be productive for long. Making us lose out on getting stuff done faster, and potential
+						money.
+					</aside>
+				</section>
+				<section>
+					<h3>Transparency</h3>
+					<ul>
+						<l
+					</ul>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section>
+					<p>TODO</p>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section>
+					<h3>Change</h3>
+					<p>TODO</p>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section>
+					<h3>Say no</h3>
+					<p></p>
+					<aside class="notes">
+					</aside>
+				</section>
+				<section>
+					<h3>Empowerment Bill of Rights</h3>
+					<ol>
+						<li>Build the person up</li>
+						<li>Clearly frame the Empowerment</li>
+						<li>Give contraints</li>
+						<li>Give advice</li>
+						<li>Test it</li>
+					</ol>
+					<aside class="notes">
+						This is something we should implement to our development team. Give them the path to be successful by giving
+						the courage and tools to be successful. And set up a route to fail, I mean, learn fast.
+					</aside>
+				</section>
+				<section>
+					<h3>Speed round</h3>
+					<ul>
+						<li>"<del>Fail</del>" => "Learn"</li>
+						<li>
+							Eliminate waste
+						</li>
+						<li>
+							These roles are full time roles
+						</li>
+						<li>
+							Product owner should have been Backlog owner
+						</li>
+						<li>
+							Should have a $1000/yr budget for team building
+						</li>
+						<li>Multitasking is <span class="fragment highlight-red">HORRIBLE</span></li>
+
+					</ul>
+					<aside class="notes">
+						Changing fail to learn is just a bit more of a positive twist to allowing us to try things, and not be
+						fearful of making a wrong decision.
+						I thought having a priority of eliminating waste kind of shifts the mind during the scrum ceremonies.
+						The scrum guide was written with having these scrum team members being a full-time position. Which I think
+						we are actually kind of close. Just no Product owners.
+						Product Owner should have been Backlog Owner, but they didn't want the abbreviation "BO" -- not that "PO" is
+						any better. ¯\_(ツ)_/¯
+						Bob suggested that there should be about 1000 annual budget for team building on a given scrum team. This is
+						for activities in scrum events, learning material, team building, team lunches, etc.
+						Retro is the most important part in a sprint. It takes that inspection into real tangible adaptation. You
+						have to change at least 1 thing in a given sprint, and always be adapting and improving as a team
+					</aside>
+				</section>
+				<section>
+					<h3>Things to consider</h3>
+					<ul>
+						<li>
+							What about management doing Scrum?
+						</li>
+						<li>
+							Or try to have 1 static scrum team. (Rotate members for group management)
+						</li>
+						<li>
+							Getting a fulltime "Product Owner" role involved.
+						</li>
+					</ul>
+					<aside class="notes">
+					</aside>
+				</section>
+			</section>
 		</div>
+	</div>
 
-		<script src="js/reveal.js"></script>
+	<script src="js/reveal.js"></script>
 
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
-			});
-		</script>
-	</body>
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true }, {
+					src: './node_modules/reveal.js-plugins/chart/chart.min.js'
+				},
+				{ src: './node_modules/reveal.js-plugins/chart/csv2chart.js' },
+			],
+			chart: {
+				title: {
+					text: "Items in a given backlog"
+				},
+				pie: { backgroundColor: [["#1b91ff", "#17ff2e", "#ff2c2d"]] },
+			},
+		});
+	</script>
+
+</body>
+
 </html>
